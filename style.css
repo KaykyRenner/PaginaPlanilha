@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Letras brancas */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+}
+
+.container {
+    max-width: 100%; /* Certifica-se de que a largura não exceda 100% */
+    width: 80%; /* Largura padrão */
+    margin: auto;
+    padding: 20px;
+    background-color: #111; /* Fundo levemente mais claro */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+header {
+    background: #222; /* Fundo do cabeçalho */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ff0000; /* Destaque em vermelho */
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #ff0000; /* Títulos em vermelho */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #fff; /* Manter o texto em branco */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+button {
+    background-color: #333; /* Cor de fundo do botão que combina com o gradiente */
+    padding: 20px 40px; /* Botão grande */
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 1.5em; /* Texto maior */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de destaque e transformação */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Efeito de destaque */
+    background-image: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    background-size: 200%; /* Aumenta o fundo */
+    color: transparent; /* Faz o texto invisível, usaremos o gradiente abaixo */
+    background-clip: text; /* Aplica o gradiente ao texto */
+    -webkit-background-clip: text; /* Compatibilidade com WebKit (Safari, Chrome) */
+}
+
+button:hover {
+    background-color: #ff4500; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+section h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #ff0000; /* Subtítulos em vermelho */
+}
+
+section h3 + p {
+    margin-left: 20px;
+}
+
+section h2 + p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+section p + button {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Ajusta a largura em telas menores */
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%; /* O botão ocupa toda a largura em telas pequenas */
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 1.8em; /* Reduz o tamanho do título em dispositivos menores */
+    }
+
+    p {
+        font-size: 1em; /* Ajusta o tamanho do texto */
+    }
+
+    ul li {
+        font-size: 1em; /* Ajusta o tamanho da lista */
+    }
+}
